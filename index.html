@@ -4,10 +4,13 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Scoutlab - Projekt Ideen</title>
+
+		<meta name="description" content="Gruppenstunden Ideen für den Scoutlab hackathon">
+		<meta name="author" content="Johannes Engelke">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/vcp.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +27,84 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<div class="slides" data-background-color="#004287">
+					<section data-background-image="/images/scoutlab.png" data-background-size="contain">
+					</section>
+					<section >
+						<h1>Scoutlab</h1>
+						<h3>Gruppenstunden Ideen</h3>
+						<p>
+							<small>Created by <a href="http://johannes-engelke.de">Johannes Engelke</a> / <a href="http://twitter.com/quablab">@quablab</a></small>
+						</p>
+					</section>
+
+					<section data-background-image="/images/14906626713_156ca94115_o.jpg">
+						<h1>Zielgruppe</h1>
+						<ul>
+							<li>
+								Alter
+							</li>
+							<li>
+								Vorwissen
+							</li>
+							<li>
+								Motivation
+							</li>
+						</ul>
+
+						<aside class="notes">
+							<ul>
+								<li>
+									Auch wenn die umsetzung der Projekte relativ überschaubar scheinen, sind viele Grundlagen notwendig um sie zu verstehen, bzw. auf ihnen aufzubauen.
+								</li>
+								<li>
+									<ul>
+										<li>Informatik</li>
+										<li>Physik</li>
+										<li>Kunst / Design</li>
+										<li>...</li>
+									</ul>
+								</li>
+								<li>
+									Informatik: Jgs 9-12 (Bayern)
+								</li>
+								<li>
+									Physik: Jgs 7-12 (Bayern)
+								</li>
+								<li>
+									Themen wie 3D Design, Methodisches vorgehen (im Engineering), Recherche, etc. - garnicht
+								</li>
+							</ul>
+
+							Fazit:
+							<ul>
+								<li>
+									Die Projekte dürfen nicht zu komplex sein.
+								</li>
+								<li>
+									Wir müssen bereit sein, wissens lücken zu füllen
+								</li>
+								<li>
+									Wir müssen die Teilnehmer motivieren um komplexe probleme zu lösen
+								</li>
+							</ul>
+						</aside>
+					</section>
+
+				<section data-background-image="/images/27199140420_040a4c5356_o.jpg"><h1>Scoutlab 2016</h1></section>
+				<section data-background-image="/images/27441603446_b675d6c5ec_o.jpg" data-background-size="contain" data-background-position="right"><h1>PfaDJ</h1></section>
+				<section data-background-image="/images/27376575482_a519f81f9e_o.jpg" data-background-size="contain" data-background-position="right"><h1>Wetterstation</h1></section>
+				<section data-background-image="/images/27476055095_5178fcdbc9_o.jpg" data-background-size="contain" data-background-position="right"><h1>Twister Pong</h1></section>
+				<section data-background-image="/images/27476060515_b45e9f5971_o.jpg" data-background-size="contain" data-background-position="right"><h1>Digitales Geländespiel</h1></section>
+				<section><h1>Mehr Beispiele</h1></section>
+				<section data-background-video="/images/squishy.mp4"><h2>https://squishycircuits.com</h2></section>
+				<section data-background-video="/images/interactive.mp4"><h1>Interactive Poster</h1></section>
+				<section data-background-video="/images/otto.mp4" data-background-video-loop="true" data-background-size="contain"><h1>Prototyping</h1></section>
+				<section data-background-video="/images/lego.mp4"><h1>Stop Motion Film</h1></section>
+				<section data-background-image="/images/Calliope_mini_weiss_JoernAlraun.jpg"></section>
+				<section data-background-image="/images/scoutlab.png" data-background-size="contain">
+
+				</section>
 			</div>
 		</div>
 
@@ -40,6 +119,7 @@
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'socket.io/socket.io.js', async: true },
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
